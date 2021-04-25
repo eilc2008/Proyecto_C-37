@@ -29,20 +29,20 @@ class Quiz {
   }
 
   play(){
-    //write code here to hide question elements
+    //escribe aquí el código para ocultar los elementos de la pregunta
 
-    //write code to change the background color here
+    //escribe aquí el código para cambiar el color de fondo 
 
-    //write code to show a heading for showing the result of Quiz
+    //escribe el código para mostrar un encabezado que indique el resultado del Cuestionario
 
-    //call getContestantInfo( ) here
+    //llama aquí a getContestantInfo( )
 
 
-    //write condition to check if contestantInfor is not undefined
+    //escribe la condición para comprobar si contestantInfor no está indefinido 
 
-    //write code to add a note here
+    //escribe aquí el código para agregar una nota
 
-    //write code to highlight contest who answered correctly
+    //escribe el código para resaltar al concursante que respondió correctamente
     
   }
 
