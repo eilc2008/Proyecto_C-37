@@ -2,9 +2,9 @@ class Question {
 
   constructor() {
     this.title = createElement('h1')
-    this.input1 = createInput("Enter Your Name Here....");
-    this.input2 = createInput("Enter Correct Option No..");
-    this.button = createButton('Submit');
+    this.input1 = createInput("Introduce Aquí Tu Nombre....");
+    this.input2 = createInput("Introduce el Número de la Opción Correcta..");
+    this.button = createButton('Enviar');
     this.question = createElement('h3');
     this.option1 = createElement('h4');
     this.option2 = createElement('h4');
@@ -20,18 +20,18 @@ class Question {
   }
 
   display(){
-    this.title.html("MyQuiz Game");
+    this.title.html("Juego MiCuestionario");
     this.title.position(350, 0);
 
-    this.question.html("Question:- What starts and ends with the letter ‘E’, but has only one letter? " );
+    this.question.html("Pregunta: En el cielo brinco y vuelo. Me encanta subir, flotar y lucir mi pelo. " );
     this.question.position(150, 80);
-    this.option1.html("1: Everyone " );
+    this.option1.html("1: Avión " );
     this.option1.position(150, 100);
-    this.option2.html("2: Envelope" );
+    this.option2.html("2: Cometa" );
     this.option2.position(150, 120);
-    this.option3.html("3: Estimate " );
+    this.option3.html("3: Águila " );
     this.option3.position(150, 140);
-    this.option4.html("4: Example" );
+    this.option4.html("4: Estrella" );
     this.option4.position(150, 160);
 
     this.input1.position(150, 230);
