@@ -30,20 +30,43 @@ class Quiz {
 
   play(){
     //escribe aquí el código para ocultar los elementos de la pregunta
+    question.hide();
 
     //escribe aquí el código para cambiar el color de fondo 
+    background(rgb(212, 119, 100));
 
     //escribe el código para mostrar un encabezado que indique el resultado del Cuestionario
+    fill(0);
+    textSize(26);
+    text("Resultado del Cuestionario",340, 50);
 
     //llama aquí a getContestantInfo( )
-
-
-    //escribe la condición para comprobar si contestantInfor no está indefinido 
-
-    //escribe aquí el código para agregar una nota
-
-    //escribe el código para resaltar al concursante que respondió correctamente
+    Contestant.getPlayerInfo();
     
+    //escribe la condición para comprobar si contestantInfor no está indefinido 
+    text("----------------------------------------",320, 65);
+    Contestant.getPlayerInfo();
+    if(allContestants !== undefined){
+      debugger;
+      var display_Answers = 230;
+      fill("Blue");
+      textSize(20);
+      text("*NOTA: ¡El concursante que respondió correctamente, está resaltado en color verde!",130,230);
+
+      for(var plr in allContestants){
+        debugger;
+        var correctAns = "2";
+        if (correctAns === allContestants[plr].answer)
+          fill("Green")
+        else
+          fill("red");
+
+        display_Answers+=30;
+        textSize(20);
+        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
+      }
+    }
+    //console.log(answer);
   }
 
 }

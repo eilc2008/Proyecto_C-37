@@ -21,7 +21,7 @@ class Question {
 
   display(){
     this.title.html("Juego MiCuestionario");
-    this.title.position(350, 0);
+    this.title.position(300, 0);
 
     this.question.html("Pregunta: En el cielo brinco y vuelo. Me encanta subir, flotar y lucir mi pelo. " );
     this.question.position(150, 80);
